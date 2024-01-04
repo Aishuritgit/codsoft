@@ -1,0 +1,24 @@
+#contact book
+Names=[]
+phnos=[]
+emails=[]
+addresses=[]
+num=int(input('how many peoples data are you storing?'))
+for i in range(num):
+    name=str(input("enter name:"))
+    phno=int(input('enter phonenumber:'))
+    Names.append(name)
+    phnos.append(phno)
+    email=input('enter your email:')
+    Address=input('enter address:')
+    emails.append(email)
+    addresses.append(Address)
+
+print('\nname\t\tphonenumber\t\temail\t\t\taddress')
+
+for i in range(num):
+    print("{}\t\t{}\t\t{}\t\t{}".format(Names[i],phnos[i],emails[i],addresses[i]))
+    
+
+        
+        
