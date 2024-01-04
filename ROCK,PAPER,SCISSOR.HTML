@@ -1,0 +1,24 @@
+#ROCK,PAPER,SCISSOR PROGRAM
+import random
+while True:
+    player=input('enter a choice(ROCK,PAPER,SCISSOR):')
+    playgame=('ROCK','PAPER','SCISSOR')
+    machine=random.choice(playgame)
+    print('YOUR CHOICE:',player)
+    print('COMPUTER CHOICE:',machine)
+    if(player==machine):
+        print('its a tie!! TRY AGAIN..ENJOY')
+    elif(player=='ROCK' and machine=='SCISSOR'):
+        print('you win!!!...ENJOY')
+    elif(player=='PAPER' and machine=='ROCK'):
+        print('you win!!!...ENJOY')
+    elif(player=='SCISSOR' and machine=='PAPER'):
+        print('you win!!!...ENJOY')
+    else:
+        print('computer wins!!!...YOU LOSSE')
+    new_game=input('do u want to play another round?(Y/N)')
+    if new_game=='y':
+        player=True
+    else:
+        print('THANKS FOR PLAYING FRIEND...')
+        break;
